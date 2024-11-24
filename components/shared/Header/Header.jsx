@@ -67,16 +67,8 @@ export default function Header() {
       </TimelineContent>
      
 
-      <TimelineContent animationNum={3} timelineRef={headerRef}>
-      {/* <div className="header__right">
-        <Link href="#">Регистрация</Link>
-        <Button className={'header__btn'}>
-          {' '}
-          <Image src={'/assets/arrow-right.png'} width={12} height={12} alt="arrow" /> Войти
-        </Button>
-      </div> */}
-      </TimelineContent>
-      <BurgerIcon openBurger={openBurger} setOpenBurger={setOpenBurger}/>
+    
+      {/* <BurgerIcon openBurger={openBurger} setOpenBurger={setOpenBurger}/> */}
     </div>
     
  

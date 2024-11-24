@@ -3,12 +3,31 @@ import React, { useEffect, useId, useState } from 'react';
 import { AnimatePresence, motion, MotionConfig } from 'framer-motion';
 import { useMediaQuery } from 'react-responsive';
 import { XIcon } from 'lucide-react';
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 const transition = {
   type: 'spring',
   duration: 0.4,
 };
 export function MediaModal({ imgSrc, videoSrc, className }) {
   const [isMediaModalOpen, setIsMediaModalOpen] = useState(false);
+  useGSAP(()=>{
+    gsap.registerPlugin(ScrollTrigger)
+    gsap.fromTo('#videoModal',{opacity: 0,  scaleX: 1.3, scaleY: 1.2},
+      {
+        scaleX: 1,
+        scaleY: 1, 
+        opacity: 1,
+        duration: 1,
+        stagger: 0.1,
+        scrollTrigger: {
+          trigger: '#videoModal',
+          start: 'top 80%'
+        }
+      }
+    )
+  },[])
 
   const uniqueId = useId();
   useEffect(() => {
@@ -32,7 +51,8 @@ export function MediaModal({ imgSrc, videoSrc, className }) {
       <MotionConfig transition={transition}>
         <>
           <motion.div
-            className="w-full ml-[50%] mt-[50px] flex relative  flex-col overflow-hidden border    dark:bg-black bg-gray-300 hover:bg-gray-200 dark:hover:bg-gray-950"
+          id='videoModal'
+            className="w-full ml-[50%] mt-[50px] flex relative  flex-col overflow-hidden border   dark:bg-black bg-gray-300 hover:bg-gray-200 dark:hover:bg-gray-950"
             layoutId={`dialog-${uniqueId}`}
             style={{
               borderRadius: '12px',

@@ -4,8 +4,12 @@ import './videoContent.scss'
 import Title from '@/components/ui/Title/Title';
 import { MediaModal } from './VideoModal';
 import { TimelineContent } from '@/utils/timelineAnimation';
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
 export default function VideoContent() {
   const videoContentRef = useRef(null)
+
+  
   return (
     <section ref={videoContentRef} className='videoContent'>
   <TimelineContent animationNum={1} timelineRef={videoContentRef}>
@@ -24,8 +28,9 @@ export default function VideoContent() {
       <div className='grid grid-cols-2 gap-2 h-full'>
       
         <MediaModal
+         
           videoSrc={
-            'https://videos.pexels.com/video-files/7710243/7710243-uhd_2560_1440_30fps.mp4'
+            '/assets/video.mp4'
           }
         />
       </div>

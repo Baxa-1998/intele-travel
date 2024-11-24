@@ -1,0 +1,50 @@
+.help{
+  width: 80%;
+  margin: auto; 
+  padding-top: 50px;
+padding-bottom: 50px;
+  .help__items{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+   
+    .help__item{
+      width: 100%;
+      height: fit-content;
+      display: flex;
+      justify-content: space-between;
+      
+      gap: 50px;
+
+      &:nth-child(2){
+        flex-direction: row-reverse;
+        display: flex;  /* Для того чтобы `justify-content` работал */
+        justify-content: space-between;
+    
+      }
+      img{
+       object-fit: contain;
+        border-radius: 40px;
+      }
+      .help__text{
+      
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        justify-content: center;
+       
+
+        padding-left: 80px;
+        padding-right: 80px;
+        border-radius: 40px;
+        background: #A8E7FF;
+        h3{
+          font-size: 32px;
+
+        }
+      }
+    }
+  }
+  
+
+}

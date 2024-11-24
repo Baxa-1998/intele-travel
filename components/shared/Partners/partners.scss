@@ -1,0 +1,16 @@
+.partners{
+  width: 80%;
+  height: fit-content;
+  padding-top: 50px;
+  margin: auto;
+  .partners__items{
+    display: flex; 
+    justify-content: space-between;
+    .partners__item{
+      display: flex;
+      align-items: center;
+      margin-top: 25px;
+      gap: 25px;
+    }
+  }
+}
