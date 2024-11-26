@@ -1,0 +1,18 @@
+.instruction{
+  width: 80%;
+  min-height: 218px;
+  background: #EAF2F5;
+  margin: auto;
+  display: flex;
+  align-items: center;
+ justify-content: center;
+ gap: 50px;
+ padding-left: 25px;
+ padding-right: 25px;
+  border-radius: 30px;
+  .instruction__btn{
+    width: 321px;
+    height: 70px;
+  }
+
+}

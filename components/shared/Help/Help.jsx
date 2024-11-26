@@ -4,6 +4,7 @@ import Image from 'next/image'
 export default function Help() {
   return (
     <section className='help'>
+  
       <div className="help__items">
         <div className="help__item">
           <Image  src='/assets/tour.jpg' width={400} height={300} alt='help'/> 
