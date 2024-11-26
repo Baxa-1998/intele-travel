@@ -6,15 +6,20 @@ import './main.scss';
 import Button from '@/components/ui/Button/Button';
 import arrowTop from '../../../public/assets/arrow-top.png'
 import { TimelineContent } from '@/utils/timelineAnimation';
+
+import pc from '../../../public/assets/main-vector.png'
+import Header from '../Header/Header';
 export default function Main() {
   const mainRef = useRef(null)
 
   return (
 
   <main ref={mainRef} className="main">
+         <Header/>
     
       <div className="main-wrapper">
-      <TimelineContent animationNum={0} timelineRef={mainRef}>
+        <div>
+        <TimelineContent animationNum={0} timelineRef={mainRef}>
       <h1 className="main__title">
           Станьте профессиональным <br /> туристическим консультантом вместе <br />  с Intele Travel
         </h1>
@@ -30,6 +35,9 @@ export default function Main() {
         <TimelineContent animationNum={2} timelineRef={mainRef}>
         <Button className={'main__btn'}>Запись на онлайн- <br /> вебинар <Image src={arrowTop} alt='main-btn' /></Button>
         </TimelineContent>
+        </div>
+        <Image src={pc} width={500} height={500} alt='pc'/>
+    
      
       </div>
     </main>

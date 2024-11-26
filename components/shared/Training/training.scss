@@ -3,12 +3,22 @@
   margin: auto;
   padding-bottom: 50px;
   height: fit-content;
+  z-index: 1;
+  background-color: #fff;
+  border-radius: 0 0 20px 20px !important;
+
   .training__wrapper{
-    display: flex; 
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 35px;
+    width: 60%;
+  
+    display: flex;
+        flex-flow: row wrap;
+        align-items: flex-start;
+        justify-content: center;
+        grid-gap: 27px;
+        gap: 27px;
+        margin: auto;
     margin-top: 25px;
+    
     .training__item{
       position: relative;
       width: 270px;
