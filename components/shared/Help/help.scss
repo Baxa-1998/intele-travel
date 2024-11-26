@@ -4,6 +4,8 @@
   padding-top: 50px;
 padding-bottom: 50px;
   .help__items{
+    width: 90%;
+    margin: auto;
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -27,15 +29,17 @@ padding-bottom: 50px;
         border-radius: 40px;
       }
       .help__text{
-      
+      width: 1230px;
         display: flex;
         flex-direction: column;
+        align-items: center;
         gap: 15px;
         justify-content: center;
        
-
-        padding-left: 80px;
-        padding-right: 80px;
+        padding-left: 50px;
+        padding-right: 50px;
+        // padding-left: 120px;
+        // padding-right: 120px;
         border-radius: 40px;
         background: #A8E7FF;
         h3{
