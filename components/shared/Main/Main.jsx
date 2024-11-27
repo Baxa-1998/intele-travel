@@ -6,7 +6,7 @@ import './main.scss';
 import Button from '@/components/ui/Button/Button';
 import arrowTop from '../../../public/assets/arrow-top.png'
 import { TimelineContent } from '@/utils/timelineAnimation';
-
+import line from '../../../public/assets/line.svg'
 import pc from '../../../public/assets/main-vector.png'
 import Header from '../Header/Header';
 export default function Main() {
@@ -40,6 +40,12 @@ export default function Main() {
     
      
       </div>
+      <div className="line__left"></div>
+      <div className='line__content'>
+   
+      </div>
+      <div className="line__right"></div>
+    
     </main>
   
   
