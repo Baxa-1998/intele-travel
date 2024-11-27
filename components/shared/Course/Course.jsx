@@ -9,7 +9,7 @@ import { TimelineContent } from '@/utils/timelineAnimation'
 export default function Course() {
   const courseRef = useRef(null)
   return (
-    <section ref={courseRef} className='course'> 
+    <section id='about' ref={courseRef} className='course'> 
       <TimelineContent animationNum={0} timelineRef={courseRef}>
       <Title>Что вы получаете на курсе ?</Title>
       </TimelineContent>

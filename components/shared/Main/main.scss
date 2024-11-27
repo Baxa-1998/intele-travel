@@ -3,7 +3,7 @@
 overflow: hidden;
  position: relative;
   min-height: 100%;
-
+padding-bottom: 50px;
   // background: url('/assets/main-vector.png');
   // background-position: right;
   // background-repeat: no-repeat;
@@ -35,7 +35,7 @@ overflow: hidden;
     z-index: 6;
     width: 100%;
     height: 55px;
-    border: 1px solid red;
+
     background: transparent url('../../../public/assets/line.svg') 50% 0 no-repeat;
   
   }
@@ -49,6 +49,33 @@ overflow: hidden;
     z-index: 6;
     background: #fff;
   }
+
+  .line__right{
+    content: "";
+    position: absolute;
+    height: 55px;
+    width: calc(50% - 590px);
+    bottom: -5px;
+    right:  0;
+    z-index: 6;
+    background: #fff;
+ 
+  }
+  .scroll__down{
+    position: absolute;
+    left: 50%;
+    z-index: 7;
+    bottom: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 37px;
+    height: 37px;
+    background-color: #fff;
+    border-radius: 50%;
+    transform: translateX(-50%);
+  }
+
   .main-wrapper{
     width: 80%;
 display: flex;
@@ -80,5 +107,42 @@ justify-content: space-between;
       margin-top: 15px;
     }
 
+  }
+  @media screen and (max-width: 1110px){
+    &::after{
+      width: 1325px;
+      height: 1325px;
+      background-image: url('../../../public/assets/circles_bg.jpg');
+      background-position: 0 -118px;
+      background-size: cover;
+      transform: translateX(-46.4%);
+
+    }
+    .main-wrapper{
+      flex-direction: column;
+      text-align: center;
+      .pc{
+        margin-left: 55%;
+        margin-top: 25px;
+        transform: translate(-50%);
+        width: 210px;
+       height: 220px;
+       padding-bottom: 50px;
+      
+      }
+      .main__btn{
+        margin-left: 54%;
+        transform: translate(-50%);
+      }
+      .main__title{
+        display: inline-block;
+        font-size: 30px;
+        align-items: center;
+        line-height: 35px;
+      }
+      .main__subtitle{
+        text-align: center;
+      }
+    }
   }
 }

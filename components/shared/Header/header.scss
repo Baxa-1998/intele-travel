@@ -47,8 +47,8 @@
         padding-bottom: 5px;
         border-radius: 75px;
         &:hover{
-          background: red;
-          color: white;
+       
+          color:var(--primary-color);
         }
       }
     
@@ -86,5 +86,13 @@
     }
   }
 
+  @media screen and (max-width: 1110px){
+    .header__socials{
+      display: none;
+    }
+    .header__center{
+      display: none;
+    }
+  }
   
 }

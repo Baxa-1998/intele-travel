@@ -22,7 +22,9 @@
 ::-webkit-scrollbar-track {
   background-color: lightgrey;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 
 body {
   height: 100%;

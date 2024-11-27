@@ -68,7 +68,7 @@ export default function Header() {
      
 
     
-      {/* <BurgerIcon openBurger={openBurger} setOpenBurger={setOpenBurger}/> */}
+      <BurgerIcon openBurger={openBurger} setOpenBurger={setOpenBurger}/>
     </div>
     
  

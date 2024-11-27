@@ -6,6 +6,7 @@
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  display: none;
 }
 .hamRotate.active {
   transform: rotate(45deg);
@@ -109,3 +110,8 @@
   stroke-dashoffset: -132px;
 }
 
+@media screen and (max-width: 1110px){
+  .ham{
+    display: block;
+  }
+}
