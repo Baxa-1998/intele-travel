@@ -7,9 +7,18 @@
   --foreground: #171717;
   --primary-color: #F12525; 
   --secondary-color: #EAF2F5; 
-
-  
 }
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/assets/font/Gilroy-Regular.ttf') format('ttf'),
+  url('/assets/font/Gilroy-Light.tff') format('ttf');
+      
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 ::-webkit-scrollbar {
   width: 10px;
 }

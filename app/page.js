@@ -1,5 +1,6 @@
 'use client'
 import Course from "@/components/shared/Course/Course";
+import Drawer from "@/components/shared/Drawer/Drawer";
 import Footer from "@/components/shared/Footer/Footer";
 import Header from "@/components/shared/Header/Header";
 import Help from "@/components/shared/Help/Help";
@@ -18,6 +19,7 @@ import { createContext, useEffect, useState } from "react";
 export default function Home() {
  
   const [modal, setModal] = useState(false)
+  const [burger, setBurger] = useState(false)
 
 
 
@@ -32,8 +34,9 @@ export default function Home() {
 
     <ModalCTX.Provider value={{modal, setModal}}>
  <div className="wrapper">
+      <Drawer burger={burger} setBurger={setBurger}/>
         <Modal/>
-        <Main/> 
+        <Main  burger={burger} setBurger={setBurger}/> 
         <Course/>
         <Training/>
         <VideoContent/>

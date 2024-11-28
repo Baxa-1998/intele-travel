@@ -9,13 +9,13 @@ import { TimelineContent } from '@/utils/timelineAnimation';
 import line from '../../../public/assets/line.svg'
 import pc from '../../../public/assets/main-vector.png'
 import Header from '../Header/Header';
-export default function Main() {
+export default function Main({burger, setBurger}) {
   const mainRef = useRef(null)
 
   return (
 
   <main ref={mainRef} className="main">
-         <Header/>
+         <Header burger={burger} setBurger={setBurger}/>
     
       <div className="main-wrapper">
         <div>

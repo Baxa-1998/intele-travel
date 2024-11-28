@@ -14,7 +14,7 @@ import React, { useRef, useState } from 'react';
 import { TimelineContent } from '@/utils/timelineAnimation';
 import BurgerIcon from '@/components/ui/Burger/BurgerIcon';
 
-export default function Header() {
+export default function Header({setBurger, burger}) {
   const [openBurger, setOpenBurger] = useState(false)
   const headerRef = useRef(null)
 
@@ -68,7 +68,7 @@ export default function Header() {
      
 
     
-      <BurgerIcon openBurger={openBurger} setOpenBurger={setOpenBurger}/>
+      <BurgerIcon burger={burger} setBurger={setBurger}/>
     </div>
     
  

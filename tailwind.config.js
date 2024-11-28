@@ -10,6 +10,9 @@ module.exports = {
       animation: {
         'infinite-scroll': 'infinite-scroll 25s linear infinite',
       },
+      fontFamily: {
+        custom: ['Gilroy', 'sans-serif'],
+      },
       keyframes: {
         'infinite-scroll': {
           from: { transform: 'translateX(0)' },
