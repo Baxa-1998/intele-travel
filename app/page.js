@@ -13,7 +13,7 @@ import VideoContent from "@/components/shared/VideContent/VideoContent";
 import Title from "@/components/ui/Title/Title";
 import { ModalCTX } from "@/context/ModalCTX";
 import Image from "next/image";
-import { createContext, useState } from "react";
+import { createContext, useContext, useState } from "react";
 
 export default function Home() {
   const {modal, setModal} = useContext(ModalCTX)
