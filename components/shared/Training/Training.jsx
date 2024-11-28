@@ -12,14 +12,16 @@ export default function Training() {
       img: "/assets/training/1.png",
       title: 'Огромное \n количество практики',
       subtitle: 'Более 500 самостоятельных \n заданий и 20 полноценных \n больших проектов',
-      className: "shake"
+      className: "shake",
+      animationNum: 1
     },
     {
       id: 2,
       img: "/assets/training/2.png",
       title: 'Современные \n методики обучения',
       subtitle: 'Спиральное обучение: \n погружаемся в материал \n постепенно, виток за витком',
-      className: "rotate"
+      className: "rotate", 
+      animationNum: 2
 
     },
     {
@@ -27,28 +29,32 @@ export default function Training() {
       img: "/assets/training/3.png",
       title: 'Простое и понятное \n изложение',
       subtitle: 'Вместо заумных \n терминов \n – примеры из реального мира',
-      className: "test"
+      className: "test",
+      animationNum: 3
     },
     {
       id: 4,
       img: "/assets/training/4.png",
       title: 'Гибкий график \n занятий',
       subtitle: 'Учитесь в любое \n время в удобном \n для вас темпе',
-           className: "shake"
+           className: "shake", 
+           animationNum: 4
     },
     {
       id: 5,
       img: "/assets/training/5.png",
       title: 'Прямая связь с \n опытными менторами',
       subtitle: 'Ответят на все ваши \n вопросы и помогут с \n разбором сложных тем',
-       className: "test"
+       className: "test",
+       animationNum: 5
     },
     {
       id: 6,
       img: "/assets/training/6.png",
       title: 'Бонусы',
       subtitle: 'После окончания курса вы \n получаете 4 дневный тур по Чикаого',
-        className: "fullRotate"
+        className: "fullRotate", 
+        animationNum: 6
     },
   ]
   return (
@@ -58,11 +64,14 @@ export default function Training() {
       </TimelineContent>
       <div className="training__wrapper">
         {trainingData.map((item)=>(
-             <div key={item.id} className="training__item">
+          <TimelineContent animationNum={item.animationNum} timelineRef={trainingRef}>
+  <div key={item.id} className="training__item">
              <Image className={item.className} src={item.img} width={58} height={58} alt='training'/> 
              <h2>{item.title}</h2>
              <p>{item.subtitle}</p>
            </div>
+          </TimelineContent>
+           
         ))}
 {/*      
         <div className="training__item"></div>
