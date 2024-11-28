@@ -16,8 +16,20 @@ import Image from "next/image";
 import { createContext, useState } from "react";
 
 export default function Home() {
+  const {modal, setModal} = useContext(ModalCTX)
+  useEffect(()=>{
+    if(modal){
+    
+      document.body.style.overflow = 'hidden'
+    }else{
+      document.body.style.overflow = ''
+    }
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  },[modal])
  
-  const [modal, setModal] = useState(false)
   return (
 
     <ModalCTX.Provider value={{modal, setModal}}>
