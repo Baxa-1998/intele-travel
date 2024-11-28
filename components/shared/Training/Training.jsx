@@ -64,8 +64,8 @@ export default function Training() {
       </TimelineContent>
       <div className="training__wrapper">
         {trainingData.map((item)=>(
-          <TimelineContent animationNum={item.animationNum} timelineRef={trainingRef}>
-  <div key={item.id} className="training__item">
+          <TimelineContent key={item.id}  animationNum={item.animationNum} timelineRef={trainingRef}>
+  <div className="training__item">
              <Image className={item.className} src={item.img} width={58} height={58} alt='training'/> 
              <h2>{item.title}</h2>
              <p>{item.subtitle}</p>

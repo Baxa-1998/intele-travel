@@ -13,23 +13,21 @@ import VideoContent from "@/components/shared/VideContent/VideoContent";
 import Title from "@/components/ui/Title/Title";
 import { ModalCTX } from "@/context/ModalCTX";
 import Image from "next/image";
-import { createContext, useContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 
 export default function Home() {
-  const {modal, setModal} = useContext(ModalCTX)
+ 
+  const [modal, setModal] = useState(false)
+
+
+
   useEffect(()=>{
     if(modal){
-    
-      document.body.style.overflow = 'hidden'
+      document.body.style.overflow  = 'hidden'
     }else{
-      document.body.style.overflow = ''
+      document.body.style.overflow  = ''
     }
-
-    return () => {
-      document.body.style.overflow = "";
-    };
   },[modal])
- 
   return (
 
     <ModalCTX.Provider value={{modal, setModal}}>
