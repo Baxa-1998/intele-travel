@@ -17,7 +17,7 @@
   display: none;
  
   .modal__item{
-    width: 618px;
+    width: 518px;
     height: fit-content;
     background: #ffff;
     padding: 25px;
@@ -45,7 +45,8 @@
         height: 56px;
         border: 1px solid #2770F133;
         outline: none; 
-        padding-left: 40px;
+        padding-left: 15px;
+        font-size: 18px !important;
 
       }
       select{
@@ -174,25 +175,27 @@
   }
   @media screen and (max-width: 540px){
     .modal__item{
-      .modal__title{
-        font-size: 24px;
-      }
-      .modal__subtitle{
-        font-size: 16px;
+      max-width: 518px;
+      width: 340px;
+      form{
+        input{
+          font-size: 14px !important;
+        }
       }
       .modal__btn_container{
+        gap: 25px;
         .modal__btn{
           width: 150px;
-          height: 45px;
-          font-size: 14px;
+        font-size: 14px;
         }
         .modal__close_btn{
           width: 150px;
-          height: 45px;
-          font-size: 14px;
+        font-size: 14px;
+
         }
       }
     }
+    
   }
 }
 
