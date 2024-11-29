@@ -1,5 +1,5 @@
 'use client';
-import React, { useEffect, useId, useState } from 'react';
+import React, { useEffect, useId, useRef, useState } from 'react';
 import { AnimatePresence, motion, MotionConfig } from 'framer-motion';
 import { useMediaQuery } from 'react-responsive';
 import { XIcon } from 'lucide-react';
@@ -12,6 +12,34 @@ const transition = {
 };
 export function MediaModal({ imgSrc, videoSrc, className }) {
   const [isMediaModalOpen, setIsMediaModalOpen] = useState(false);
+  const videoRef = useRef(null);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    // Функция для обновления состояния разрешения экрана
+    const checkScreenSize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    // Проверяем размер экрана при монтировании компонента
+    checkScreenSize();
+
+    // Слушаем изменение размера экрана
+    window.addEventListener('resize', checkScreenSize);
+
+    return () => {
+      // Убираем слушатель при размонтировании компонента
+      window.removeEventListener('resize', checkScreenSize);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (isMobile && videoRef.current) {
+      videoRef.current.setAttribute('controls', 'controls');
+    } else if (videoRef.current) {
+      videoRef.current.removeAttribute('controls');
+    }
+  }, [isMobile]);
   useGSAP(() => {
     gsap.registerPlugin(ScrollTrigger);
     gsap.fromTo(
@@ -64,7 +92,7 @@ export function MediaModal({ imgSrc, videoSrc, className }) {
             }}>
             {videoSrc && (
               <motion.div layoutId={`dialog-video-${uniqueId}`} className="w-full">
-                <video autoPlay muted loop className="h-full w-full object-cover  rounded-sm">
+                <video ref={videoRef} autoPlay muted loop className="h-full w-full object-cover  rounded-sm">
                   <source src={videoSrc} type="video/mp4" />
                 </video>
               </motion.div>
