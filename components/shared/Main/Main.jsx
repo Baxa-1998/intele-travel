@@ -36,7 +36,7 @@ export default function Main({burger, setBurger}) {
         <Button className={'main__btn'}>Запись на онлайн- <br /> вебинар <Image src={arrowTop} alt='main-btn' /></Button>
         </TimelineContent>
         </div>
-        <Image className='pc' src={pc} width={500} height={500} alt='pc'/>
+        {/* <Image className='pc' src={pc} width={500} height={500} alt='pc'/> */}
     
      
       </div>
