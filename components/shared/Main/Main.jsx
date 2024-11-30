@@ -18,7 +18,7 @@ export default function Main({burger, setBurger}) {
          <Header burger={burger} setBurger={setBurger}/>
     
       <div className="main-wrapper">
-        <div>
+        <div className='main__content'>
         <TimelineContent animationNum={0} timelineRef={mainRef}>
       <h1 className="main__title">
           Станьте профессиональным <br /> туристическим консультантом вместе <br />  с Intele Travel
