@@ -13,10 +13,14 @@ background-size: cover;
     color: #050505;
     font-size: 16px;
     text-align: center;
+ 
+
+    
     margin-top: 25px;
 
   }
   @media screen and (max-width: 768px){
+    background: url('../../../public//assets/training-bg.png') center 0 no-repeat;
     .videoContentSubtitle{
       font-size: 12px;
       br{
