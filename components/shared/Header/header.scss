@@ -87,6 +87,9 @@
   }
 
   @media screen and (max-width: 1110px){
+    .header__wrapper{
+      width: 90%;
+    }
     .header__socials{
       display: none;
     }

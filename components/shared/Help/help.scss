@@ -49,6 +49,48 @@ padding-bottom: 50px;
       }
     }
   }
-  
+  @media screen and (max-width: 1110px){
+    width: 90%;
+    .help__items{
+      .help__item{
+        flex-direction: column;
+        align-items: center;
+        &:nth-child(2){
+          flex-direction: column;
+        }
+        .help__text{
+          width: fit-content;
+          padding-bottom: 25px;
+          padding-top: 25px;
+        }
+      }
+    }
+
+  }
+
+  @media screen and (max-width: 768px){
+    .help__items{
+      .help__item{
+        img{
+          width: 300px;
+          height: 240px;
+          object-fit: fill;
+        }
+        .help__text{
+          h3{
+            font-size: 20px;
+          }
+          p{
+            font-size: 14px;
+          }
+        }
+        // img{
+        //   width: 300px;
+        //   height: 240px;
+        //   border-radius: 40px;
+        // }
+      }
+    }
+  } 
 
 }
