@@ -22,26 +22,26 @@ export default function Modal() {
    */
   /******  6b9d5233-0674-4cc9-a1b6-bafe0c93e114  *******/
  
-  const sendToTelegram = async (data) => {
-    const botToken = '7321067132:AAFCdOolT8gBp08xstqf45NYGRyvfVVVVzY';
-    const chatId = ['57844596', '6466999731', '563246689', '311591296', '32110499'];
-    const message = `Имя: ${inputValue.name}\nТелефон: ${inputValue.phone}\nДата: ${inputValue.email}`;
+  // const sendToTelegram = async (data) => {
+  //   const botToken = '7321067132:AAFCdOolT8gBp08xstqf45NYGRyvfVVVVzY';
+  //   const chatId = ['57844596', '6466999731', '563246689', '311591296', '32110499'];
+  //   const message = `Имя: ${inputValue.name}\nТелефон: ${inputValue.phone}\nДата: ${inputValue.email}`;
 
-    const promises = chatId.map((chatId) => {
-      const url = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(
-        message,
-      )}`;
-      return fetch(url);
-    });
+  //   const promises = chatId.map((chatId) => {
+  //     const url = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(
+  //       message,
+  //     )}`;
+  //     return fetch(url);
+  //   });
 
-    try {
-      await Promise.all(promises);
-      alert('Message sent to Telegram');
-    } catch (error) {
-      console.error(error);
-      alert('Error sending message to Telegram');
-    }
-  };
+  //   try {
+  //     await Promise.all(promises);
+  //     alert('Message sent to Telegram');
+  //   } catch (error) {
+  //     console.error(error);
+  //     alert('Error sending message to Telegram');
+  //   }
+  // };
 
   const handleCloseModal = () => {
     setModal(false);
@@ -49,28 +49,28 @@ export default function Modal() {
       setIsShow(true);
     }, 1000);
   };
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (inputValue.name !== '' && inputValue.phone !== '' && inputValue.email !== '') {
-      sendToTelegram(inputValue);
-      console.log('send');
-      setTimeout(() => {
-        setIsShow(!isShow);
-      }, 1000);
-    } else {
-      alert('Заполните все поля');
-    }
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   if (inputValue.name !== '' && inputValue.phone !== '' && inputValue.email !== '') {
+  //     sendToTelegram(inputValue);
+  //     console.log('send');
+  //     setTimeout(() => {
+  //       setIsShow(!isShow);
+  //     }, 1000);
+  //   } else {
+  //     alert('Заполните все поля');
+  //   }
 
-    setInputValue({
-      name: '',
-      email: '',
-      phone: '',
-    });
+  //   setInputValue({
+  //     name: '',
+  //     email: '',
+  //     phone: '',
+  //   });
 
-    // setTimeout(() => {
-    //   setIsShow(!isShow)
-    // }, 1000);
-  };
+  //   // setTimeout(() => {
+  //   //   setIsShow(!isShow)
+  //   // }, 1000);
+  // };
   // useEffect(()=>{
 
   // },[date])
@@ -95,6 +95,7 @@ export default function Modal() {
               value={inputValue.name}
               type="text"
               placeholder="Ваше имя"
+              className='text-[18px]'
             />
           </div>
           <div className="inp__select">
@@ -124,22 +125,40 @@ export default function Modal() {
               placeholder="Телефон"
             />
           </div>
-          <div className="inp__email pb-10">
+        
+          <div className="inp__email">
          
          <input
            required
            onChange={(e) => setInputValue({ ...inputValue, email: e.target.value })}
            value={inputValue.email}
            type="email"
-           placeholder="email"
+           placeholder="Email"
          />
+       </div>
+
+       <div className='inp__time pb-4'>
+        <label htmlFor="">Выберите время</label>
+              <div className='flex gap-2'>
+              <select name="" id="">
+          <option value="saturday">Суббота</option>
+        </select>
+        <select name="" id="">
+<option value="">14.00</option>
+<option value="">16.00</option>
+        </select>
+              </div>
        </div>
       
         </form>
         <div className="modal__btn_container">
-          <button onClick={handleSubmit} className="modal__btn">
+          <a href="https://t.me/courser_test_gjhjgj_bot"> 
+          
+          <button  className="modal__btn">
             Оставить заявку
           </button>
+          </a>
+        
           <button onClick={handleCloseModal} className="modal__close_btn">
             Отмена
           </button>
