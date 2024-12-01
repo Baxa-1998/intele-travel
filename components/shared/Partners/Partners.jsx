@@ -7,7 +7,7 @@ export default function Partners() {
   return (
     <section className="partners">
       <Title>Наши партнеры</Title>
-      <div className="partners__items">
+      {/* <div className="partners__items">
         <div className="partners__item">
           <Image src="/assets/training/1.png" width={60} height={60} alt="partners-logo" />
           <p>
@@ -29,7 +29,7 @@ export default function Partners() {
             за тот блок, который сейчас проходите.
           </p>
         </div>
-      </div>
+      </div> */}
       <div className='mt-[50px]'>
       <PartnersLogo/>
       </div>
