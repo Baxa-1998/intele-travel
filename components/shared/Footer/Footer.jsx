@@ -30,7 +30,7 @@ export default function Footer() {
           <ul>
             <a href="#"><li>Чему вы научитесь</li></a>
             <a href="#"><li>Процесс обучения</li></a>
-            <a href="#"><li>Стоимость</li></a>
+            {/* <a href="#"><li>Стоимость</li></a> */}
             <a href="#"><li>Контакты</li></a>
             <a href="#"><li>Регистрация</li></a>
           </ul>
