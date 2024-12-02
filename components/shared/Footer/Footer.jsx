@@ -15,9 +15,9 @@ export default function Footer() {
             <div className="footer__socials-item">
             <Image src={instagram} alt="social" />
             </div>
-            <div className="footer__socials-item">
+            {/* <div className="footer__socials-item">
             <Image src={vk} alt="social" />
-            </div>
+            </div> */}
             <div className="footer__socials-item">
             <Image src={facebook} alt="social" />
             </div>
