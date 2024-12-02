@@ -50,26 +50,15 @@
 
     }
   }
-  .btn-wrapper{
-    display: flex;
-    gap: 15px;
-    border-radius: 110px;
-    margin: auto;
-    margin-top: 25px;
-    width: fit-content;
-    height: fit-content;
-    background-color: #ffff;
-    padding: 10px;
+  
+ 
     .stages__btn{
       width: 250px;
       height: 70px;
       margin-left: 50%;
       transform: translate(-50%);
     }
-    p{
-      font-weight: 600;
-    }
-  }
+ 
 
   @media screen and (max-width: 1110px){
     .stages__wrapper{
