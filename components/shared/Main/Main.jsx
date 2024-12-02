@@ -33,7 +33,7 @@ export default function Main({burger, setBurger}) {
         </TimelineContent>
       
         <TimelineContent animationNum={2} timelineRef={mainRef}>
-        <Button className={'main__btn'}>Запись на онлайн- <br /> вебинар <Image src={arrowTop} alt='main-btn' /></Button>
+        <Button className={'main__btn'}>Записаться на онлайн- <br /> вебинар <Image src={arrowTop} alt='main-btn' /></Button>
         </TimelineContent>
         </div>
         {/* <Image className='pc' src={pc} width={500} height={500} alt='pc'/> */}

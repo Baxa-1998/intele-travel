@@ -51,7 +51,7 @@ export default function Stages() {
       
       </div>
       <div className="btn-wrapper">
-        <Button className={'stages__btn'}>Начать обучение <Image src={arrowTop} alt='stages-btn'/></Button>
+        <Button className={'stages__btn'}>Записаться на онлайн- <br /> вебинар <Image src={arrowTop} alt='stages-btn'/></Button>
         <p>Попробуйте, первые уроки <br /> бесплатны, но нужно пройти <br /> тестирование</p>
       </div>
     </section>
