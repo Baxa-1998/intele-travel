@@ -14,7 +14,7 @@ export default function Drawer({burger, setBurger}) {
         <ul className='flex flex-col gap-2'>
           <li className='font-custom text-[#22253B] font-normal'><a href="#">Чему вы научитесь</a></li>
           <li className='font-custom'><a href="#">Онлайн платформа</a></li>
-          <li className='font-custom'><a href="#">Стоимость</a></li>
+          {/* <li className='font-custom'><a href="#">Стоимость</a></li> */}
           <li className='font-custom'><a href="#">Контакты</a></li>
           <li className='font-custom'><a href="#">Регистрация</a></li>
         </ul>
