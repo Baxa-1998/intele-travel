@@ -37,9 +37,9 @@ export default function Header({setBurger, burger}) {
           <Link href="#">
             <li>Процесс обучение</li>
           </Link>
-          <Link href="#">
+          {/* <Link href="#">
             <li>Стоимость</li>
-          </Link>
+          </Link> */}
           <Link href="#">
             <li>Контакты</li>
           </Link>
