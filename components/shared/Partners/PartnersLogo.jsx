@@ -116,7 +116,7 @@ function PartnersLogo() {
             <li key={item.id}>
             <a
               target="_blank"
-              href="https://www.youtube.com/naymurweb"
+              href="#"
               className="bg-primary  text-primary-foreground text-2xl  sm:grid place-content-center  p-2   rounded-md">
               <Image src={item.img} width={100} height={100} alt={'partners'}/>
             </a>
@@ -130,7 +130,7 @@ function PartnersLogo() {
             <li key={item.id}>
             <a
               target="_blank"
-              href="https://www.youtube.com/naymurweb"
+              href="#"
               className="bg-primary  text-primary-foreground text-2xl  sm:grid place-content-center  p-2   rounded-md">
               <Image src={item.img} width={100} height={100} alt={'partners'}/>
             </a>
