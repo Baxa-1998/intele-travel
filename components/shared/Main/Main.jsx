@@ -21,7 +21,7 @@ export default function Main({burger, setBurger}) {
         <div className='main__content'>
         <TimelineContent animationNum={0} timelineRef={mainRef}>
       <h1 className="main__title">
-          Станьте профессиональным <br /> туристическим консультантом вместе <br />  с Intele Travel
+          Станьте профессиональным <br /> туристическим консультантом вместе <br />  с Intele Travel <span className='text-[#F12525]'>Бесплатно</span>
         </h1>
       </TimelineContent>
       

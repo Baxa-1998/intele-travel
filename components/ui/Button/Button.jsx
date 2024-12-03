@@ -14,7 +14,7 @@ export default function Button({children, className, ...props}) {
       <div className='flex items-center gap-1 translate-y-0 skew-y-0 transition duration-500 group-hover:-translate-y-[150%] group-hover:skew-y-12'>
         {children}
       </div>
-      <div  className='absolute items-center gap-1 flex translate-y-[150%] skew-y-12 transition duration-500 group-hover:translate-y-0 group-hover:skew-y-0'>
+      <div  className='absolute items-center gap-1 flex translate-y-[200%] skew-y-12 transition duration-500 group-hover:translate-y-0 group-hover:skew-y-0'>
         {children}
       </div>
     </span>
