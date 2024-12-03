@@ -16,7 +16,7 @@ export default function Drawer({burger, setBurger}) {
           <li className='font-custom'><a href="#">Онлайн платформа</a></li>
           {/* <li className='font-custom'><a href="#">Стоимость</a></li> */}
           <li className='font-custom'><a href="#">Контакты</a></li>
-          <li className='font-custom'><a href="#">Регистрация</a></li>
+          {/* <li className='font-custom'><a href="#">Регистрация</a></li> */}
         </ul>
         
       </div>

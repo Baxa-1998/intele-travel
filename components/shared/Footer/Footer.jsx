@@ -32,7 +32,7 @@ export default function Footer() {
             <a href="#"><li>Процесс обучения</li></a>
             {/* <a href="#"><li>Стоимость</li></a> */}
             <a href="#"><li>Контакты</li></a>
-            <a href="#"><li>Регистрация</li></a>
+       
           </ul>
         </div>
         <div className="footer__right">
