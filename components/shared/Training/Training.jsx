@@ -48,14 +48,14 @@ export default function Training() {
        className: "test",
        animationNum: 5
     },
-    {
-      id: 6,
-      img: "/assets/training/6.png",
-      title: 'Бонусы',
-      subtitle: 'После окончания курса вы \n получаете 4 дневный тур по Чикаого',
-        className: "fullRotate", 
-        animationNum: 6
-    },
+    // {
+    //   id: 6,
+    //   img: "/assets/training/6.png",
+    //   title: 'Бонусы',
+    //   subtitle: 'После окончания курса вы \n получаете 4 дневный тур по Чикаого',
+    //     className: "fullRotate", 
+    //     animationNum: 6
+    // },
   ]
   return (
     <section ref={trainingRef} className='training'>

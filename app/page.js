@@ -6,6 +6,7 @@ import Header from "@/components/shared/Header/Header";
 import Help from "@/components/shared/Help/Help";
 import Instruction from "@/components/shared/Instruction/Instruction";
 import Main from "@/components/shared/Main/Main";
+import Mentors from "@/components/shared/Mentors/Mentors";
 import Modal from "@/components/shared/Modal/Modal";
 import Partners from "@/components/shared/Partners/Partners";
 import Stages from "@/components/shared/Stages/Stages";
@@ -39,7 +40,8 @@ export default function Home() {
         <Main  burger={burger} setBurger={setBurger}/> 
         <Course/>
         <Training/>
-        <VideoContent/>
+        <Mentors/>
+        {/* <VideoContent/> */}
         <Stages/>
         <Help/>
         <Partners/>
