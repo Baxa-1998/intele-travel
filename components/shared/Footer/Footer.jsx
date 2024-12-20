@@ -10,7 +10,7 @@ export default function Footer() {
     <footer className='footer'>
       <div className="footer__container">
         <div className="footer__left">
-          <Image src='/assets/logo.png'  width={87} height={32} alt='footer-logo'/>
+          <Image src='/assets/logo.png'  width={120} height={40} alt='footer-logo'/>
           <div className='footer__socials'>
             <div className="footer__socials-item">
             <Image src={instagram} alt="social" />

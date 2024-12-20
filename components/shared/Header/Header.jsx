@@ -5,10 +5,12 @@ import facebook from '../../../public/assets/facebook.png';
 import instagram from '../../../public/assets/instagram.png';
 import vk from '../../../public/assets/vk.png';
 import youtube from '../../../public/assets/youtube.png';
+import arrowRight from '../../../public/assets/arrow-right.png'
 import Image from 'next/image';
 import Link from 'next/link';
 import Button from '@/components/ui/Button/Button'; 
 import logo from '../../../public/assets/logo.png'
+
 
 import React, { useRef, useState } from 'react';
 import { TimelineContent } from '@/utils/timelineAnimation';
@@ -49,21 +51,26 @@ export default function Header({setBurger, burger}) {
       
 
       <TimelineContent animationNum={2} timelineRef={headerRef}>
-      <div className="header__socials">
+        <div className='header__right'>
+          <Button className={'header__btn'}><Image width={12} height={12} src={arrowRight} alt='arrow-right'/> Оплатить</Button>
+          <div className="header__socials">
+        
 
-<div className="header__socials-item">
-  <Image src={instagram} alt="social" />
-</div>
-{/* <div className="header__socials-item">
-  <Image src={vk} alt="social" />
-</div> */}
-<div className="header__socials-item">
-  <Image src={facebook} alt="social" />
-</div>
-<div className="header__socials-item">
-  <Image src={youtube} alt="social" />
-</div>
-</div>
+        <div className="header__socials-item">
+          <Image src={instagram} alt="social" />
+        </div>
+        {/* <div className="header__socials-item">
+          <Image src={vk} alt="social" />
+        </div> */}
+        <div className="header__socials-item">
+          <Image src={facebook} alt="social" />
+        </div>
+        <div className="header__socials-item">
+          <Image src={youtube} alt="social" />
+        </div>
+        </div>
+        </div>
+
       </TimelineContent>
      
 

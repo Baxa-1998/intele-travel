@@ -106,6 +106,8 @@
   padding-right: 15px;
   padding-top: 5px;
   padding-bottom: 5px;
+  display: flex;
+  align-items: center;
       
     }
   }
@@ -124,6 +126,11 @@
       img{
         width: 71px;
         height: 71px;
+      }
+    }
+    .header__right{
+      .header__btn{
+        display: none;
       }
     }
     .header__center{
