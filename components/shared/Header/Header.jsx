@@ -8,7 +8,7 @@ import youtube from '../../../public/assets/youtube.png';
 import Image from 'next/image';
 import Link from 'next/link';
 import Button from '@/components/ui/Button/Button'; 
-
+import logo from '../../../public/assets/logo.png'
 
 import React, { useRef, useState } from 'react';
 import { TimelineContent } from '@/utils/timelineAnimation';
@@ -24,7 +24,7 @@ export default function Header({setBurger, burger}) {
     <div className="header__wrapper">
     <div  className="header__left">
     <TimelineContent animationNum={0} timelineRef={headerRef}>
-    <Image src="/assets/logo.png" width={53} height={20} alt="logo" />
+    <Image src={logo}  alt="logo" />
     </TimelineContent>
 
       </div>

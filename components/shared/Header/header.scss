@@ -29,7 +29,13 @@
   }
 
   .header__left{
-
+    display: flex;
+    align-items: center;
+    img{
+      width: 70px;
+      height: 70px;
+      margin-top: 5px;
+    }
   }
   .header__center{
     ul{
