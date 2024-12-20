@@ -27,6 +27,23 @@
             height: 35px;
             background: var(--primary-color); 
             border-radius: 50%;
+            img{
+              width: 18px;
+              height: 18px;
+             
+            }
+            &:nth-child(2){
+              img{
+                width: 8px;
+                height: 15px;
+              }
+            }
+            &:nth-child(3){
+              img{
+                width: 20px;
+                height: 14px;
+              }
+            }
         }
       }
     }

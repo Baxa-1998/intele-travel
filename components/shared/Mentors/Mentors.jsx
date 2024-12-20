@@ -1,15 +1,21 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './mentors.scss';
 import Title from '@/components/ui/Title/Title';
 import Image from 'next/image';
 import mentor1 from '../../../public/assets/mentors/1.jpg';
 import mentor2 from '../../../public/assets/mentors/2.jpg';
+import { TimelineContent } from '@/utils/timelineAnimation';
 export default function Mentors() {
+  const mentorsRef = useRef()
   return (
-    <section className="mentors">
-      <Title>Наши опытные менторы</Title>
+    <section ref={mentorsRef} className="mentors">
+        <TimelineContent animationNum={1} timelineRef={mentorsRef}>
+        <Title>Наши опытные менторы</Title>
+        </TimelineContent>
+     
       <div className="mentors__items">
-        <div className="mentors__item">
+      <TimelineContent animationNum={2} timelineRef={mentorsRef}>
+      <div className="mentors__item">
           <Image src={mentor1} alt="mentors" />
           <h3>
             Юлия
@@ -24,7 +30,9 @@ export default function Mentors() {
             познакомиться с туризмом!
           </p>
         </div>
-        <div className="mentors__item">
+      </TimelineContent>
+      <TimelineContent animationNum={3} timelineRef={mentorsRef}>
+      <div className="mentors__item">
           <Image src={mentor2} alt="mentors" />
           <h3>
             Илона Нестерова <br /> в туристическом бизнесе уже более 3 лет.{' '}
@@ -36,8 +44,10 @@ export default function Mentors() {
             двоих детей, хорошо знаю парки и аттракционы. Помогу с выбором ниши и прохождением
             сертификации.
           </p>
-        </div>
-        <div className="mentors__item">
+        </div>    
+      </TimelineContent>
+      <TimelineContent animationNum={4} timelineRef={mentorsRef}>
+      <div className="mentors__item">
           <Image src={mentor2} alt="mentors" />
           <h3>
             Илона Нестерова <br /> в туристическом бизнесе уже более 3 лет.{' '}
@@ -50,6 +60,8 @@ export default function Mentors() {
             постоянно и советуют меня своим знакомым.{' '}
           </p>
         </div>
+      </TimelineContent>
+   
       </div>
     </section>
   );
