@@ -53,7 +53,7 @@ export default function Header({setBurger, burger}) {
       <TimelineContent animationNum={2} timelineRef={headerRef}>
         <div className='header__right'>
           <Link href={'#'}>
-          <Button className={'header__btn'}><Image width={12} height={12} src={arrowRight} alt='arrow-right'/> Оплатить</Button>
+          <button className={'header__btn'}><Image width={12} height={12} src={arrowRight} alt='arrow-right'/> Оплатить</button>
           </Link>
         
           <div className="header__socials">
