@@ -60,7 +60,7 @@ export default function Training() {
   return (
     <section ref={trainingRef} className='training'>
       <TimelineContent animationNum={3} timelineRef={trainingRef}>
-      <Title>Обучение в Intele Travel – это <br /> удобно и результативно</Title>
+      <Title>Обучение в нашем курсе – это <br /> удобно и результативно</Title>
       </TimelineContent>
       <div className="training__wrapper">
         {trainingData.map((item)=>(
