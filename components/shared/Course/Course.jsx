@@ -36,7 +36,7 @@ export default function Course() {
             </TimelineContent>
            
             </div>
-            <Button className={'course__btn'}>Записаться на онлайн <br /> вебинар <Image src={arrowTop} alt='course-btn'/></Button>
+            <Button className={'course__btn'}>Начните обучение <br /> сегодня <Image src={arrowTop} alt='course-btn'/></Button>
 
           </div>
                   
